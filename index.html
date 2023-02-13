@@ -1,0 +1,53 @@
+<!--  OBJETIVOS:
+            - Titulo de la pestaña "Calculadora"
+            - En el cuerpo de la pagina un titulo "Calculadora Javascript"
+            - 2 Input text
+            - 1 Boton "Sumar"
+        -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Calculadora</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="calculadora">
+        <form>
+            <h1>Calculadora Javascript</h1>
+            <input type="text">
+            <input type="text">
+            <button type="button">=</button>
+        </form>
+    </div>
+    <h5>Bovivop && xss oner</h5>
+</body>
+</html>
+<script>
+    // Variables
+    var first_numero = parseInt(prompt('First number'));
+    var second_numero = parseInt(prompt('Second number'));
+    var resultado = 0;
+
+    var option = prompt('Operator:')
+
+    if (option == '+') {
+        resultado = first_numero + second_numero;
+    } else {
+        if (option == '-') {
+            resultado = first_numero - second_numero;
+        } else {
+            if (option == '*') {
+                resultado = first_numero * second_numero;
+            } else {
+                if (option == '/') {
+                    resultado = first_numero / second_numero;
+                }
+            }
+        }
+    }
+
+    alert("El resultado es: \n" + resultado)
+</script>
